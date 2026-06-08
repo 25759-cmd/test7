@@ -94,13 +94,11 @@ def print_all_aircraft_by_payload():
     for fighter in results:
         print(f"{fighter[1]:<30}{fighter[2]:<8}{fighter[3]:<6}{fighter[4]:<6}{fighter[5]:<6}{fighter[6]:<6}")
     #loop finished here
-    db.close()
-
+    db.close() 
 
 #main code
 while True:
-    user_input = input(
-"""
+    user_input = input("""
 what would you like to do.
 1. print all aircraft
 2. Print all aircraft sorted by speed
@@ -125,5 +123,5 @@ what would you like to do.
     elif user_input == "7":
         break
     else:
-        print("That was not a option\n")
+        2print("That was not a option\n")
 
